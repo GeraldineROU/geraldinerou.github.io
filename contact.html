@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+</head>
+
+<body>
+
+    <div id="form">
+        <a href="mailto:geraldine.rouy@gmail.com">Contactez moi !</a>
+        <form action="https://httpbin.org/post" method="post">
+            <div class="element">
+                Vous êtes :
+                <input type="radio" id="particulier" value="particulier" name="requestor">
+                <label for="particulier">Un particulier</label>
+                <input type="radio" id="employeur" value="employeur" name="requestor">
+                <label for="employeur">Un employeur</label>
+            </div>
+            <div class="element">
+                <label for="quoi">Motif du message</label>
+                <select name="quoi" id="quoi">
+                    <option value="">--Motif du message--</option>
+                    <option value="alternance">Proposition d'alternance</option>
+                    <option value="Renseignements">Renseignements complémentaires</option>
+                    <option value="autre">Autre</option>
+                    <option value="chats">Ca manque de chats...</option>
+                </select>
+            </div>
+            <div class="element">
+                <label for="texte">Ecrivez votre message ici</label>
+                <br>
+                <textarea name="texte" id="texte" cols="30" rows="10" required></textarea>
+            </div>
+            <input type="submit" value="C'est parti!" id="parti">
+        </form>
+    </div>
+
+    <br>
+    <a href="./index.html">CV</a>
+</body>
+
+</html>
